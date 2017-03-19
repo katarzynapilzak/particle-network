@@ -36,7 +36,7 @@ var canvas = document.querySelector("canvas");
     this.draw = function() {
       context.beginPath();
       context.strokeStyle = '#e670a0';
-      context.fillStyle = "#000000";
+      context.fillStyle = '#000000';
       context.lineWidth = 2;
       context.arc((0.5 + this.x) | 0, (0.5 + this.y) | 0, this.rad, 0, 2*Math.PI, false);
       context.stroke();
@@ -72,7 +72,7 @@ var canvas = document.querySelector("canvas");
         var dot2 = dots[j];
         var distance = Math.hypot(dot.x - dot2.x, dot.y - dot2.y);
           if (distance < 150) {
-            context.strokeStyle = "#e670a0";
+            context.strokeStyle = '#e670a0';
             context.lineWidth = (150-distance) / 100;
             context.moveTo((0.5 + dot.x) | 0, (0.5 + dot.y) | 0);
             context.lineTo((0.5 + dot2.x) | 0, (0.5 + dot2.y) | 0);
